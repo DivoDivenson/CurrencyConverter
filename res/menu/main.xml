@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_edit_currencies"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_edit_currencies"/>
+    
+    <item
+        android:id="@+id/action_get_data"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/stat_notify_sync"
+        android:title="@string/action_get_data"/>
+    
+    <item
+        android:id="@+id/action_set_base"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/_unknown"
+        android:title="@string/action_set_base"
+        />
+        
+
+</menu>

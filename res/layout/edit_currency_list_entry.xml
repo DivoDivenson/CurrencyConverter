@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:id="@+id/list_entry_layout">
+
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip" >
+        
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/_unknown"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/currency_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="TEST"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    
+     <TextView
+        android:id="@+id/hyphen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/currency_code"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/currency_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/hyphen"
+        android:text="TEST"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <CheckBox
+        android:id="@+id/currency_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:checked="false" />
+   
+</RelativeLayout>

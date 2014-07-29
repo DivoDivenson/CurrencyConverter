@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Currency Converter</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_edit_currencies">Select Currencies</string>
+    <string name="action_get_data">Update</string>
+    <string name="action_set_base">Set base currency</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_currency_list">CurrencyListActivity</string>
+    <string name="title_activity_converter">ConverterActivity</string>
+
+    <color name="base_background">#DCEDFB</color>
+    <color name="spliter">#82C2FB</color>
+
+    <string name="title_activity_edit_currencies">Edit Currencies</string>
+    <string name="summary_activity_edit_currencies">Select which currencies to display</string>
+    <string name="title_activity_edit_currencies_preference">EditCurrenciesPreference</string>
+    <string name="title_activity_edit_currency_list">EditCurrencyListActivity</string>
+    <string name="title_activity_nyan">NyanActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">YOU MADE YOUR CHOICE</string>
+    <string name="title_activity_nyan_cat">NyanCatActivity</string>
+
+</resources>

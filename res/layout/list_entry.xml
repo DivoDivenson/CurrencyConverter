@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_entry_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/_unknown" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/currency_amount_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginTop="7sp"
+        android:layout_toRightOf="@+id/thumbnail" >
+
+        <TextView
+            android:id="@+id/currency_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="###"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+             />
+
+        <Button
+            android:id="@+id/currency_amount_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Ok"
+            android:visibility="gone"
+             />
+
+        <EditText
+            android:id="@+id/currency_amount_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/currency_amount_cancel"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="gone" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/currency_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currency_amount_container"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="###"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/currency_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/currency_code"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/currency_code"
+        android:text="###"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</RelativeLayout>
